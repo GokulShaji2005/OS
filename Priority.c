@@ -57,9 +57,23 @@ int main() {
     }
     
     printf("\n Gantt Chart\n");
-    printf("%d ",at[0]);
+      for(int i=0;i<n;i++){
+     printf("------");
+    }
+
+    printf("\n");
+       for(int i=0;i<n;i++){
+     printf("%d    |",pid[i]);
+    }
+    printf("\n");
+ 
+      for(int i=0;i<n;i++){
+     printf("------");
+    }
+      printf("\n");
+    printf("%d    ",at[0]);
     for(int i=0;i<n;i++){
-     printf("P%d %d ",pid[i],ct[i]);
+     printf("%d    ",ct[i]);
     }
 
     printf("\nAverage Turnaround Time: %.2f\n", totalTat / n);
